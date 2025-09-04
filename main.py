@@ -9,8 +9,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    # Get the header and bottom text from environment variables
     header_text = os.getenv('HEADER_TEXT', 'Welcome to Flask!')
     bottom_text = os.getenv('BOTTOM_TEXT', '')
+    # Get the image URLs from environment variables
     image_url = os.getenv('IMAGE_URL', '')
     background_image = os.getenv('BACKGROUND_IMAGE', '')
     
