@@ -1,4 +1,6 @@
-# 🥋 Be A Man Level 10 – Full Summary
+# 🥋 Cloud Run Basic – Full Summary
+# Initial code from Aaron McDonald and T.I.Q.S. - thank you Gentlemen!
+
 
 ![GCP](https://img.shields.io/badge/cloud-Google%20Cloud-blue)
 ![Cloud Run](https://img.shields.io/badge/service-Cloud%20Run-success)
@@ -7,8 +9,8 @@
 ![Flask](https://img.shields.io/badge/framework-Flask-red)
 ![Status](https://img.shields.io/badge/status-Deployed-success)
 ![Version](https://img.shields.io/badge/version-v2.0-yellow)
-![GitHub Repo Size](https://img.shields.io/github/repo-size/tiqsclass6/gcp-be-a-man-level-10)
-![Last Commit](https://img.shields.io/github/last-commit/tiqsclass6/gcp-be-a-man-level-10)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/https://github.com/jastek69/gcp-cloudrun-basic.git)
+![Last Commit](https://img.shields.io/github/last-commit/https://github.com/jastek69/gcp-cloudrun-basic.git)
 
 > Deploy a dynamic Python Flask app to Google Cloud Run with traffic splitting, environment configs, and CI/CD via Cloud Build and GitHub triggers.
 
@@ -18,7 +20,7 @@ This guide walks through the deployment of a Flask application to **Google Cloud
 
 ## 🧭 Project Summary
 
-The **Be‑A‑Man‑Level‑10** project is a Python Flask-based web application deployed to **Google Cloud Run** using a CI/CD workflow powered by **Google Cloud Build** and **GitHub**. The application is structured around a dual-branch deployment strategy, where versioned branches (`be-a-man-level-10-v1` and `be-a-man-level-10-v2`) represent distinct revisions of the application. These revisions are built and deployed either manually via the `gcloud run deploy` CLI or automatically via GitHub-triggered Cloud Build pipelines.
+The **gcp-cloudrun** project is a Python Flask-based web application deployed to **Google Cloud Run** using a CI/CD workflow powered by **Google Cloud Build** and **GitHub**. The application is structured around a dual-branch deployment strategy, where versioned branches (`be-a-man-level-10-v1` and `be-a-man-level-10-v2`) represent distinct revisions of the application. These revisions are built and deployed either manually via the `gcloud run deploy` CLI or automatically via GitHub-triggered Cloud Build pipelines.
 
 The app dynamically renders content based on environment variables, which are configured at deployment time. Once deployed, revisions can be managed through **Cloud Run traffic splitting**, allowing the developer to direct specific percentages of user traffic to different versions of the service (e.g., **50/50 rollout**). This enables controlled testing, rollback, and revision monitoring without downtime. The architecture is lightweight, serverless, and regionally deployed in `asia-northeast1`, leveraging Google's managed infrastructure for scalability and security.
 
@@ -60,17 +62,17 @@ The app dynamically renders content based on environment variables, which are co
 
 ---
 
-## 🌿 Repository Branches
+## 🌿 Repository Branches - WIP not implemented yet
 
-The GitHub repo `tiqsclass6/gcp-be-a-man-level-10` contains two main branches:
+The GitHub repo `https://github.com/jastek69/gcp-cloudrun-basic.git` contains two main branches:
 
-### 🔹 [`be-a-man-level-10-v1`](https://github.com/tiqsclass6/gcp-be-a-man-level-10/tree/be-a-man-level-10-v1)
+### 🔹 [`be-a-man-level-10-v1`](https://github.com/https://github.com/jastek69/gcp-cloudrun-basic.git/tree/gcp-cloudrun-v1)
 
 - Basic Flask app  
 - Default environment values  
 - Cloud Run v1 deployable
 
-### 🔹 [`be-a-man-level-10-v2`](https://github.com/tiqsclass6/gcp-be-a-man-level-10/tree/be-a-man-level-10-v2)
+### 🔹 [`be-a-man-level-10-v2`](https://github.com/https://github.com/jastek69/gcp-cloudrun-basic.git/tree/gcp-cloudrun-v2)
 
 - Enhanced content via environment vars (e.g., `"Fight Smith Til The End"`)
 - Includes `cloudbuild.yaml` for automated builds  
@@ -92,7 +94,7 @@ The GitHub repo `tiqsclass6/gcp-be-a-man-level-10` contains two main branches:
 
 ## ✍️ Authors & Acknowledgments
 
-- **Author:** T.I.Q.S.
-- **Group Leader:** John Sweeney
+- **Author:** John Sweeney
+- **Original Code:** T.I.Q.S. and Aaron McDonald
 
 ---
